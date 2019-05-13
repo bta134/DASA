@@ -60,7 +60,7 @@
               <argument>
                 -Dcom.sun.xml.ws.transport.http.client.HttpTransportPipe.dump=true
               </argument>
-              <argument>net.mail.ws.client.App</argument>
+              <argument>net.mail.ws.client.WSMailClient</argument>
               </arguments>
             </configuration>
           </plugin>
