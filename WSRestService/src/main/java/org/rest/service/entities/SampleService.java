@@ -6,10 +6,13 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import java.util.Map;
 import java.util.HashMap;
-import java.util.logging.Logger;
-import java.util.logging.LoggerFactory;
 import java.util.List;
+import java.util.ArrayList;
 import java.util.Calendar;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
     
 @Path("/sampleservice")
 public class SampleService {
