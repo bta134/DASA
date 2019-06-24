@@ -45,9 +45,9 @@ public class SampleService {
         return new ArrayList<Album>(albums.values()); 
      }
      
-     public Album getAlbum(String albumId){}
+   /*  public Album getAlbum(String albumId){}
      public List<Album> listAlbumsJSON(){}
      public Album getAlbumJSON(String albumId){}
-
+*/
  }
      
