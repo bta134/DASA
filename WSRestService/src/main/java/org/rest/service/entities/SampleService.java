@@ -4,7 +4,13 @@ import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
-
+import java.util.Map;
+import java.util.HashMap;
+import java.util.logging.Logger;
+import java.util.logging.LoggerFactory;
+import java.util.List;
+import java.util.Calendar;
+    
 @Path("/sampleservice")
 public class SampleService {
     private static Map<String, Album> albums = new HashMap<String, Album>();
