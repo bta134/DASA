@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="expenseReport" type="ExpenseT" />
+<xs:complexType name="ExpenseT">
+    <xs:sequence>
+        <xs:element name="user" type="UserT"/>
+        <xs:element name="items" type="ItemListT"/>
+    </xs:sequence>
+</xs:complexType>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="expenseReport" type="ExpenseT" />
+<xs:complexType name="ExpenseT">
+    <xs:sequence>
+        <xs:element name="user" type="UserT"/>
+        <xs:element name="items" type="ItemListT"/>
+    </xs:sequence>
+</xs:complexType>
+</xsd:schema>
