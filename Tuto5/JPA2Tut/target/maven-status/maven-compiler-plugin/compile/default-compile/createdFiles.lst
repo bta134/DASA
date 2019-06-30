@@ -1,0 +1,4 @@
+net\persistance\db\User.class
+net\persistance\db\UserDAOImpl.class
+net\persistance\db\App.class
+net\persistance\db\GenericDAO.class

@@ -1,0 +1,3 @@
+net\rest\ws\service\App.class
+org\rest\service\entities\Album.class
+org\rest\service\entities\SampleService.class

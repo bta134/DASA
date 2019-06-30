@@ -1,13 +1,13 @@
 package net.tuto2.ws.client;
 
-/**
- * Hello world!
- *
- */
 public class App 
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        MyConcatAgent agent = new MyConcatAgent();
+        WSConcat wsconcat = agent.getWSConcatImplPort();
+        String output = wsconcat.concat("Hello Concat ", "World!");
+
+        System.out.println(output);
     }
 }

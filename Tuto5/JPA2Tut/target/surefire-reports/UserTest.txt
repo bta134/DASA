@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: UserTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 10.734 s <<< FAILURE! - in UserTest
+testFindAll(UserTest)  Time elapsed: 0.371 s  <<< ERROR!
+org.dbunit.dataset.NoSuchTableException: USER
+	at UserTest.seedData(UserTest.java:71)
+	at UserTest.initTransaction(UserTest.java:55)
+
+addTwoUsers(UserTest)  Time elapsed: 0.027 s  <<< ERROR!
+org.dbunit.dataset.NoSuchTableException: USER
+	at UserTest.seedData(UserTest.java:71)
+	at UserTest.initTransaction(UserTest.java:55)
+
