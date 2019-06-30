@@ -1,3 +1,5 @@
 net\rest\ws\service\App.class
 org\rest\service\entities\Album.class
+org\rest\service\filters\JpaFilter.class
 org\rest\service\entities\SampleService.class
+org\rest\service\filters\JpaUtil.class

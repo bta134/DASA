@@ -5,17 +5,31 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.persistence.Temporal;
+import javax.persistence.Id;
+import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+import javax.persistence.*;
+
 
 @XmlRootElement(name = "album")
+@Entity
+@Table(name="album")
 public class Album {
-  private String albumId;
+  @Id @GeneratedValue(strategy=GenerationType.IDENTITY)
+  private int albumId;
+  @Column(name="TITLE")
   private String title;
+  @Temporal(TemporalType.DATE)
   private Date rdate;
+  @Column(name="GENRE")
   private String genre;
   
   @XmlElement
-  public String getAlbumId() {return albumId;}
-  public void setAlbumId(String albumId) {this.albumId = albumId;}
+  public int getAlbumId() {return albumId;}
+  public void setAlbumId(int albumId) {this.albumId = albumId;}
   
   @XmlElement
   public String getGenre() {return genre;}

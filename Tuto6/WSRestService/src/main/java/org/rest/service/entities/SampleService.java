@@ -16,11 +16,11 @@ import org.slf4j.LoggerFactory;
     
 @Path("/sampleservice")
 public class SampleService {
-    private static Map<String, Album> albums = new HashMap<String, Album>();
+    private static Map<Integer, Album> albums = new HashMap<Integer, Album>();
     private static final Logger LOG = LoggerFactory.getLogger(SampleService.class);
     static {
         Album album1 = new Album();
-        album1.setAlbumId("1");
+        album1.setAlbumId(1);
         album1.setTitle("Elephunk");
         album1.setGenre("HipHop");
         Calendar cal = Calendar.getInstance();
@@ -29,7 +29,7 @@ public class SampleService {
         albums.put(album1.getAlbumId(), album1);
         
         Album album2 = new Album();
-        album2.setAlbumId("2");
+        album2.setAlbumId(2);
         album2.setTitle("Demon Days");
         album2.setGenre("HipHop");
         cal.set(2005, 12, 6);
