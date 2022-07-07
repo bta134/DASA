@@ -77,7 +77,7 @@
     <dependency>
      <groupId>org.eclipse.jetty</groupId>
      <artifactId>jetty-server</artifactId>
-     <version>8.1.7.v20120910</version>
+     <version>10.0.10</version>
      <scope>provided</scope>
     </dependency>
     <!-- c3p0 -->
